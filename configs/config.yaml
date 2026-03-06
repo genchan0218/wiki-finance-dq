@@ -1,0 +1,16 @@
+data:
+  duckdb_path: "C:/Users/genki/Documents/Personal Project/PV/Historical/pageviews_hourly.duckdb"
+  stock_mapping: "C:/Users/genki/Documents/Personal Project/PV/Historical/Company Data/master_map_data_2026-03-04.csv"
+  crypto_mapping: "C:/Users/genki/Documents/Personal Project/PV/Historical/Company Data/cryptocurrency_with_wikipedia_links_verified.csv"
+
+thresholds:
+  min_articles_per_date: 2000
+  min_hours_per_article: 20
+  zscore_spike: 3.0
+  zero_views_pct_warning: 0.05
+  missing_rate_warning: 0.05
+  missing_rate_critical: 0.20
+
+output:
+  reports_dir: outputs/reports
+  baseline_path: configs/baseline_stats.json

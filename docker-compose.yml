@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+  app:
+    build: .
+    volumes:
+      - .:/app
+      - "C:/Users/genki/Documents/Personal Project/PV/Historical:/data/pv:ro"
+    working_dir: /app
+    command: python -m src.main
